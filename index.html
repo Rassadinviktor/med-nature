@@ -1,0 +1,455 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="js/vendor/slick-1.8.0/slick/slick.css">
+        <link rel="stylesheet" href="js/vendor/slick-1.8.0/slick/slick-theme.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+        <div class="b-wrapper">
+            <header class="b-header">
+                <div class="b-logo-container">
+                    <div class="b-container">
+                        <a href="javascript:void(0)" class="b-logo" title="На главную">
+                            <img src="img/logo.png" alt="BIO - ваше рецепт природной красоты" title="BIO - ваше рецепт природной красоты" class="b-logo__image">
+                        </a>
+                        <div class="b-contacts">
+                            <a href="tel:88005555555" class="b-contacts__phone" title="8 (800) 555 - 55 - 55">8 (800)<mark class="contacts__phone--big-text text-mark">555 - 55 - 55</mark></a>
+                            <span class="b-contacts__info">Ежедневно с 9 - 00 до 19 - 00</span>
+                        </div>
+                        <a href="javascript:void(0)" class="b-cart" title="Перейти в корзину">
+                            <div class="b-cart__wrapper">
+                                <span class="b-cart__text b-cart__text--middle text-mark">Корзина</span>
+                                <span class="b-cart__text">Товаров:<span class="js-count">0</span></span>
+                                <span class="b-cart__text">На сумму:<span class="js-count">0</span></span>
+                                <span class="b-cart__text b-cart__text--middle text-mark">Оформить заказ</span>
+                                <i class="icon icon__cart"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <nav class="b-header-menu b-menu">
+                    <ul class="b-header-menu__list">
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="Главная" class="b-header-menu__title-link b-menu__title-link b-menu__title-link--active">Главная</a>
+                        </li>
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="Новые поступления" class="b-header-menu__title-link b-menu__title-link">Новые поступления</a>
+                        </li>
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="Акции" class="b-header-menu__title-link b-menu__title-link">Акции</a>
+                        </li>
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="Аксесуары" class="b-header-menu__title-link b-menu__title-link">Аксесуары</a>
+                        </li>
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="Оплата и доставка" class="b-header-menu__title-link b-menu__title-link">Оплата и доставка</a>
+                        </li>
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="Статьи" class="b-header-menu__title-link b-menu__title-link">Статьи</a>
+                        </li>
+                        <li class="b-header-menu__item b-menu__item">
+                            <a href="#" title="О нас" class="b-header-menu__title-link b-menu__title-link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="b-bottom-menu b-menu">
+                    <ul class="b-bottom-menu__list">
+                        <li class="b-bottom-menu__item b-menu__item">
+                            <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="Очищение"><span class="b-bottom-menu__big-text">Очищение</span></a>
+                            <ul class="sub-menu sub-menu__first">
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Молочко</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Тоники</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Отшелушивание и Демакияж</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-bottom-menu__item b-menu__item">
+                            <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="для лица - premium">
+                                <span class="b-bottom-menu__middle-text">для лица</span>
+                                <span class="b-bottom-menu__series-title">classic</span>
+                            </a>
+                        </li>
+                        <li class="b-bottom-menu__item b-menu__item">
+                            <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="для лица - classic">
+                                <span class="b-bottom-menu__middle-text">для лица</span>
+                                <span class="b-bottom-menu__series-title">premium</span>
+                            </a>
+                        </li>
+                        <li class="b-bottom-menu__item b-menu__item">
+                            <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="для тела"><span class="b-bottom-menu__big-text">Для тела</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="b-main-content">
+                <div class="b-container">
+                    <div class="b-inner-content">
+                        <aside class="b-sidebar">
+                            <form action="" class="b-search-form b-sidebar__search-form">
+                                <input type="search" class="b-search-form__field" placeholder="Поиск" >
+                            </form>
+                            <div class="b-stock">
+                                <a href="" class="b-stock__title-link text-mark">Акция месяца</a>
+                                <a href="" class="b-stock__tile-product">
+                                    <span class="b-tile-product__title">Дневной крем Lancome 50 ml</span>
+                                    <div class="b-tile-product__wrapper-image">
+                                        <img src="img/_ex_1.jpg" alt="" class="b-tile-product__image">
+                                    </div>
+                                    <div class="b-tile-product__info">
+                                        <div class="b-tile-product__price text-mark">
+                                            <div class="price-new">
+                                                <span class="price__text">цена</span>
+                                                <ins class="price__num price-new__num text-bold">900</ins>
+                                                <ins class="price__rub">р</ins>
+                                            </div>
+                                            <div class="price-old">
+                                                <span class="price__text">цена</span>
+                                                <ins class="price__num line-through">1800</ins>
+                                                <ins class="price__rub">р</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="b-separator" />
+                                <a href="" class="b-stock__tile-product second">
+                                    <span class="b-tile-product__title">Дневной крем Lancome 50 ml</span>
+                                    <div class="b-tile-product__wrapper-image">
+                                        <img src="img/_ex_1.jpg" alt="" class="b-tile-product__image">
+                                    </div>
+                                    <div class="b-tile-product__info">
+                                        <div class="b-tile-product__price text-mark">
+                                            <div class="price-new">
+                                                <span class="price__text">цена</span>
+                                                <ins class="price__num price-new__num text-bold">900</ins>
+                                                <ins class="price__rub">р</ins>
+                                            </div>
+                                            <div class="price-old">
+                                                <span class="price__text">цена</span>
+                                                <ins class="price__num line-through">1800</ins>
+                                                <ins class="price__rub">р</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="b-stock__view-all text-mark">Смотреть все</a>
+                            </div>
+                            <img src="img/_ex_2.jpg" alt="" class="example">
+                            <a href="#" class="b-callback-manager text-mark text-bold">Связаться с руководителем</a>
+                            <section class="b-last-news">
+                                <span class="b-last-news__title">Последние статьи</span>
+                                <ul class="b-last-news__list">
+                                    <li class="b-last-news__item">
+                                        <article class="b-b-last-news__post">
+                                            <div class="b-post__thumbnail-wrapper">
+                                                <img src="img/_ex_3.jpg" alt="" class="b-post__thumbnail">
+                                                <a href="#" class="b-post__filter-date text-mark">22.01.15</a>
+                                            </div>
+                                            <p class="b-post__short-text">Наш онлайн магазин Мед-натуре является местом, в котором у Вас есть возможность купить для себя самые известные и эффективные товары<a href="" title="Подробнее" class="b-post__learn-more text-mark">Подробнее</a></p>
+                                        </article>
+                                    </li>
+                                    <hr class="b-post-separator" />
+                                    <li class="b-last-news__item">
+                                        <article class="b-b-last-news__post">
+                                            <div class="b-post__thumbnail-wrapper">
+                                                <img src="img/_ex_3.jpg" alt="" class="b-post__thumbnail">
+                                                <a href="#" class="b-post__filter-date text-mark">22.01.15</a>
+                                            </div>
+                                            <p class="b-post__short-text">Наш онлайн магазин Мед-натуре является местом, в котором у Вас есть возможность купить для себя самые известные и эффективные товары<a href="" title="Подробнее" class="b-post__learn-more text-mark">Подробнее</a></p>
+                                        </article>
+                                    </li>
+                                    <hr class="b-post-separator" />
+                                    <li class="b-last-news__item">
+                                        <article class="b-b-last-news__post">
+                                            <div class="b-post__thumbnail-wrapper">
+                                                <img src="img/_ex_3.jpg" alt="" class="b-post__thumbnail">
+                                                <a href="#" class="b-post__filter-date text-mark">22.01.15</a>
+                                            </div>
+                                            <p class="b-post__short-text">Наш онлайн магазин Мед-натуре является местом, в котором у Вас есть возможность купить для себя самые известные и эффективные товары<a href="" title="Подробнее" class="b-post__learn-more text-mark">Подробнее</a></p>
+                                        </article>
+                                    </li>
+                                    <hr class="b-post-separator" />
+                                </ul>
+                                <a href="#" class="b-last-news__view-all">Смотреть все</a>
+                            </section>
+                        </aside>
+                        <main class="b-main">
+                            <div class="b-slider-container">
+                                <div class="b-slider-wrapper">
+                                    <div class="js-slider">
+                                        <div class="js-slider__slide">
+                                            <a href="javascript:void(0);" title="Защита от солнца" class="js-slider__link">
+                                                <img src="img/slide.jpg" alt="Защита от солнца" title="Защита от солнца" class="js-slider__image">
+                                            </a>
+                                        </div>
+                                        <div class="js-slider__slide">
+                                            <a href="javascript:void(0);" title="Защита от солнца" class="js-slider__link">
+                                                <img src="img/slide.jpg" alt="Защита от солнца" title="Защита от солнца" class="js-slider__image">
+                                            </a>
+                                        </div>
+                                        <div class="js-slider__slide">
+                                            <a href="javascript:void(0);" title="Защита от солнца" class="js-slider__link">
+                                                <img src="img/slide.jpg" alt="Защита от солнца" title="Защита от солнца" class="js-slider__image">
+                                            </a>
+                                        </div>
+                                        <div class="js-slider__slide">
+                                            <a href="javascript:void(0);" title="Защита от солнца" class="js-slider__link">
+                                                <img src="img/slide.jpg" alt="Защита от солнца" title="Защита от солнца" class="js-slider__image">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-features">
+                                    <ul class="b-features__list">
+                                        <li class="b-features__item">
+                                            <figure class="b-features__icon">
+                                                <img src="img/thumb-up_icon.png" alt="Надёжность работы" title="Надёжность работы" class="b-features__image">
+                                                <figcaption class="b-features__text">Надёжность работы</figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="b-features__item">
+                                            <figure class="b-features__icon">
+                                                <img src="img/warranty_icon.png" alt="Гарантия Подлинности" title="Гарантия Подлинности" class="b-features__image">
+                                                <figcaption class="b-features__text">Гарантия Подлинности</figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="b-features__item">
+                                            <figure class="b-features__icon">
+                                                <img src="img/cash-back_icon.png" alt="Возможность возврата" title="Возможность возврата" class="b-features__image">
+                                                <figcaption class="b-features__text">Возможность возврата</figcaption>
+                                            </figure>
+                                        </li>                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <section class="b-product-card-container">
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="b-product-card">
+                                    <a href="#" class="b-product-card__link" title="marocMaroc Питательный крем для лица Богатство аргании">
+                                        <div class="b-product-card__img-container">
+                                            <img src="img/_ex_4.jpg" alt="marocMaroc Питательный крем для лица Богатство аргании" title="marocMaroc Питательный крем для лица Богатство аргании" class="b-product-card__image">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <span class="b-product-card__title">marocMaroc<span class="b-product-card__volume">75 мл</span></span>
+                                            <span class="b-product-card__description">Питательный крем для лица "Богатство аргании marocMaroc..</span>
+                                        </div>
+                                    </a>
+                                    <div class="b-product-card__checkout-section">
+                                        <span class="b-product-card__price">1700<span class="b-product-card__currency">руб</span></span>
+                                        <button type="submit" class="b-product-card__add-to-cart">В корзину</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+                <section class="b-about-content">
+                    <div class="b-container">
+                        <h3 class="b-about-content__title">Рады приветствовать Вас в нашем интернет магазине “Med - Nature”!</h3>
+                        <p class="b-about-content__text">Наш онлайн магазин Мед-натуре является местом, в котором у Вас есть возможность купить для себя самые известные и эффективные товары для здоровья, которые произведены исключительно из натуральных компонентов. Наша команда всегда следит за событиями на рынке новинок, и предлагаем своим клиентам приобрести только ту продукцию, которая считается уникальной в своем роде. Наш интернет магазин “Med - Nature” предлагает вам купить качественные товары для здоровья по доступной стоимости, а именно: черничную пасту LiQberry, товары компании Тентори ум, которая выпускает свою продукцию на основе меда, гели компании Alezan, препараты на основе Алоэ вера, йогуртовые закваски Good Food и VIVO, а также продукцию компании Yani Cosmetics.</p>
+                        <p class="b-about-content__text">Доктора очень часто говорят, что лучше всего заранее предупредить заболевание, чем в будущем тратить свое здоровье и деньги на его лечение В каталоге нашего интернет магазина у вас есть возможность приобрести продукцию, при помощи которой Вы сможете улучшить здоровье своей семьи и близких. С интернет магазином “Med - Nature” быть здоровым очень легко!</p>
+                        <p class="b-about-content__text">Принципы интернет магазина Меднатуре заключаются в достаточном обеспечении своих клиентов продукцией, которая имеет уникальные свойства для лечения различных заболеваний, а также обладает повышенной надежностью, эффективностью и простотой в использовании. Наша компания желает Вам крепкого здоровья и приглашает приобрести в нашем интернет магазине полезные для вашего здоровья товары!</p>
+                    </div>                
+                </section>
+                <footer class="b-footer">
+                    <div class="b-container">
+                        <div class="b-footer-inner">
+                            <ul class="b-footer__menu-list b-menu-list__contacts">
+                                <li class="b-footer__menu-item">Интернет-магазин bio.ru</li>
+                                <li class="b-footer__menu-item">г.Москва, москва москва москва, метро москва</li>
+                                <li class="b-footer__menu-item">Офисно-складской комплекс «Москва»</li>
+                                <li class="b-footer__menu-item">Телефон: 8(55555555555)</li>
+                            </ul>
+                            <ul class="b-footer__menu-list b-menu-list__quest">
+                                <li class="b-footer__menu-item text-bold">
+                                    <a href="#" class="b-footer__menu-link">Отзывы</a>
+                                </li>
+                                <li class="b-footer__menu-item">
+                                    <a href="#" class="b-footer__menu-link">Обратная связь</a>
+                                </li>
+                                <li class="b-footer__menu-item">
+                                    <a href="#" class="b-footer__menu-link">Статьи</a>
+                                </li>
+                                <li class="b-footer__menu-item">
+                                    <a href="#" class="b-footer__menu-link">Вопрос-ответ</a>
+                                </li>
+                            </ul>
+                            <ul class="b-footer__menu-list b-menu-list__about">
+                                <li class="b-footer__menu-item text-bold">
+                                    <a href="#" class="b-footer__menu-link">О магазине</a>
+                                </li>
+                                <li class="b-footer__menu-item">
+                                    <a href="#" class="b-footer__menu-link">Оплата и доставка</a>
+                                </li>
+                                <li class="b-footer__menu-item">
+                                    <a href="#" class="b-footer__menu-link">Партнерская программа</a>
+                                </li>
+                                <li class="b-footer__menu-item">
+                                    <a href="#" class="b-footer__menu-link">Схема проезд</a>
+                                </li>
+                            </ul>
+                            <div class="b-footer__payment-methods">
+                                <span class="b-footer__title text-bold">Способы оплаты</span>
+                                <div class="b-payment-methods__wrapper">
+                                    <a href="#" class="b-footer__link" title="Оплата ">
+                                        <img src="img/visa_icon.jpg" alt="Оплата Visa" title="Оплата Visa" class="b-footer__payment-icon">
+                                    </a>
+                                    <a href="#" class="b-footer__link" title="Оплата Master-Card">
+                                        <img src="img/master-card_icon.jpg" alt="Оплата Master-Card" title="Оплата Master-Card" class="b-footer__payment-icon">
+                                    </a>
+                                    <a href="#" class="b-footer__link" title="Оплата Webmoney">
+                                        <img src="img/webmoney_icon.jpg" alt="Оплата Webmoney" title="Оплата Webmoney" class="b-footer__payment-icon">
+                                    </a>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </footer>            
+            </div>
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/slick-1.8.0/slick/slick.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

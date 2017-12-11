@@ -1,0 +1,1039 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: normal;
+    color: #1b1b1b;
+    background-color: #dde6f0
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+img {
+    width: 100%;
+    border: 0;
+    display: block;
+    font-size: 0;
+}
+
+input {
+    outline: none;
+}
+
+// input[type=text], input[type=submit] {
+//     font-family: "Open Sans";
+//     text-transform: uppercase;
+// }
+
+// input[type=submit] {
+//     font-weight: 600;    
+// }
+
+a {
+    color: #000;
+    outline: none;
+    text-decoration: none;
+}
+
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+    border:red 3px solid
+}
+
+body input:required:valid,
+body textarea:required:valid {
+    border: green 3px solid
+}
+
+.b-wrapper{
+    width: 992px;
+    height: 100%;
+    padding-top: 52px;
+    margin: auto;
+}
+
+.b-container {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.b-header {
+    margin-bottom: 23px;
+}
+
+.b-logo-container {
+    margin-bottom: 14px;
+}
+
+.b-logo {
+    width: 355px;
+    height: 140px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 64px;
+}
+
+.b-contacts {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 60px;
+}
+
+.b-contacts__phone{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-mark{
+    color: #006ab3;
+    background-color: transparent;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.contacts__phone--big-text {
+    font-size: 40px;
+    position: relative;
+    top: -22px;
+    right: -8px;
+}
+
+.b-contacts__info {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    right: -118px;
+}
+
+.b-cart {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 22px 18px 0 25px;
+    box-sizing: content-box;
+}
+
+.b-cart__wrapper {
+    // padding-left: 20px;
+    // border-left: 1px solid #b8c0c8;
+    // padding-top: 5px;
+    position: relative;
+}
+
+.b-cart__text{
+    display: block;
+    font-size: 14px;
+    line-height: 29px;
+}
+
+.b-cart__text--middle{
+    font-size: 16px;
+}
+
+.js-count {
+    margin-left: 2px;
+}
+
+.icon__cart{
+    background-image: url(../img/icon_cart.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -14px;
+    right: 4px;
+}
+
+.b-menu{
+    background-image: url(../img/menu_bg.png);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.b-menu__item{
+    display: inline-block;
+    text-align: center;
+    background-image: url(../img/separate_menu.png);
+    background-repeat: repeat-y;
+    background-position: left;
+}
+
+.b-header-menu{
+    margin-bottom: 10px;
+}
+
+.b-menu__item{
+    vertical-align: top;
+}
+
+.b-header-menu__item {
+    min-width: 103px;
+}
+
+.b-menu__title-link--active,
+.b-bottom-menu{
+    background-image: url(../img/menu_bg_active.png)
+}
+
+.b-header-menu__item:last-child{
+    width: 142px;
+}
+
+.b-header-menu__item:first-child {
+    width: 138px;
+}
+
+.b-menu__title-link {
+   
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+
+.b-header-menu__title-link{
+    padding: 10px;
+     font-size: 18px;    
+}
+
+.b-bottom-menu {
+    height: 61px;
+}
+
+.b-bottom-menu__list {
+    height: 100%;
+}
+
+.b-bottom-menu__item {
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+.b-bottom-menu__item:first-child {
+    background-image: none;
+}
+
+.b-bottom-menu__title-link {
+    padding: 5px 0;
+    height: 100%;
+    color: #dde6f0;
+}
+
+.b-bottom-menu__middle-text{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.b-bottom-menu__big-text{
+    text-transform: uppercase;
+    display: block;
+    padding-top: 9px;
+    font-size: 28px;
+}
+
+.b-bottom-menu__series-title{
+    display: block;
+    font-size: 24px;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+
+//----------------Подменю-----------------
+
+.sub-menu{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #dde6f0;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.sub-menu__first{
+    display: none;
+    top: 40px;
+    left: 44px;
+    width: 198px;
+    padding: 4px 0 43px;
+}
+
+.sub-menu__item{
+    width: 172px;
+    margin: auto;
+    border-bottom: 1px solid #b9c1c9;
+}
+
+.sub-menu__item:last-child{
+    margin-top: -3px;
+    border-bottom: none;
+}
+
+.sub-menu__link{
+    display: block;
+    padding: 17px 0 7px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #006ab3;
+    text-align: center;
+    text-decoration: none;
+}
+
+.b-bottom-menu__item:hover .sub-menu{
+    display: table;
+}
+
+.b-bottom-menu__item:nth-child(1):hover .sub-menu__first{
+    display: block;
+    z-index: 100;
+}
+
+.b-main-content {
+    padding-top: 15px;
+    padding-bottom: 11px;
+    background-color: #fff;
+}
+
+.b-inner-content{
+    margin-bottom: 104px;
+}
+
+.b-sidebar {
+    display: inline-block;
+    width: 265px;
+}
+
+.b-search-form {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 3px
+}
+
+.b-search-form__field {
+    width: 100%;
+    font-size: 14px;
+    color: #1b1b1b;
+    padding: 6px 14px;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+    background-image: url(../img/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+
+.b-search-form__field:focus {
+    box-shadow: inset 0 0 5px rgba(178,178,178,1);
+}
+
+.b-stock {
+    text-align: center;
+    margin-left: -18px;
+    margin-bottom: 14px;
+}
+
+.b-stock__title-link {
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.b-stock__tile-product {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.b-tile-product__title {
+    color: #4D4C4D;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.b-tile-product__wrapper-image {
+    width: 170px;
+    margin: 0 auto;
+}
+
+.b-tile-product__info {
+    padding: 0 7px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.price-text{
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.price-new {
+    margin-bottom: 5px;
+}
+.price__num{
+    text-decoration: none;
+}
+
+.price-new__num {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.price__rub{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.b-separator {
+    background-color: #c5c4c4;
+    height: 1px;
+    border: none;
+    width: 220px;
+    margin: 12px auto 11px;
+}
+
+.second .b-tile-product__title {
+    margin-bottom: 15px;
+}
+
+.second .b-tile-product__wrapper-image {
+    margin-bottom: 5px;
+}
+
+.second .b-stock__tile-product {
+    margin-bottom: 29px;
+}
+
+.b-stock__view-all{
+    display: block;
+    margin-top: 29px;
+    padding-left: 21px;
+}
+
+.b-stock__view-all::after{
+    content:"";
+    display: inline-block;
+    width: 29px;
+    height: 9px;
+    margin-left: 10px;
+    background-image: url(../img/stock_arrow.png);
+}
+
+.example {
+    width: 240px;
+    margin-bottom: 14px
+}
+
+.b-callback-manager {
+    width: 230px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: 1px solid #c5c6ca;
+    border-bottom: 1px solid #c5c6ca;
+    padding: 5px 0 6px;
+    text-align: center;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.b-last-news__title {
+    display: block;
+    background-color: #00a2e8;
+    text-align: center;
+    width: 238px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 0 6px;
+    margin-left: 5px;
+    border-radius: 2px;
+    margin-bottom: 7px;
+}
+
+.b-last-news__list{
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.b-last-news__item {
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.b-post-separator {
+    width: 236px;
+    border: none;
+    height: 1px;
+    background-color: #d0d2d2;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.b-post__thumbnail-wrapper {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 56px; 
+}
+
+.b-post__thumbnail{
+    border: 1px solid #eee;
+}
+
+.b-post__filter-date {
+    display: block;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.b-post__short-text {
+    display: inline-block;
+    width: 200px;
+    margin: 0;
+    line-height: 14px;
+}
+
+.b-post__learn-more{
+    padding-left: 5px;
+}
+
+.b-post__learn-more::after{
+    content:"";
+    display: inline-block;
+    width: 37px;
+    height: 6px;
+    margin-left: 5px;
+    background-image: url(../img/post_arrow.png);
+}
+
+.b-last-news__view-all {
+    display: block;
+    margin: 0 auto;
+    width: 122px;
+    background-color: #00a2e8;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.b-main {
+    display: inline-block;
+    width: 698px;
+    vertical-align: top;
+    position: absolute;
+}
+
+.b-slider-container {
+    margin-bottom: 56px;
+    margin-left: 19px;
+}
+
+.b-slider-wrapper{
+    background-color: #eee;
+    width: 100%;
+    padding: 3px 0 4px 5px;    
+}
+
+.js-slider{
+    margin-bottom: 0!important;
+}
+
+.js-slider__arrow{
+    display: none!important;
+}
+
+.js-slider__image{
+    width: 670px;
+}
+
+.slick-dots {
+    bottom: 9px;
+    right: 9px;
+    text-align: right;
+}
+
+.slick-dots li {
+    margin: 0 1px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+    color: #a2a6a8;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #d8d9da;
+}
+
+.b-features{
+    background-color: #f0f0f0;
+}
+
+.b-features__item {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    width: 33.3333%;
+}
+
+.b-features__icon{
+    border-right: 1px solid #e1e1e1;
+    height: 30px;
+    margin: 0;
+}
+
+.b-features__image {
+    display: inline-block;
+    width: 40px;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-top: -5px;
+}
+
+.b-features__text {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 4px;
+}
+
+.b-product-card {
+    display: inline-block;
+    width: 201px;
+    border: 1px solid #ebebeb;
+    margin: 0 11px 37px 18px;
+}
+
+.b-product-card:hover {
+    box-shadow: 0 0 5px #cacaca;
+}
+
+.b-product-card__link {
+    padding: 5px 5px 0;
+    display: block;
+}
+
+.b-product-card__img-container {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+}
+
+.b-product-card__title {
+    text-align: right;
+    display: block;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.b-product-card__volume {
+    padding-left: 22px;
+}
+
+.b-product-card__description {
+    font-size: 12px;
+}
+
+.b-product-card__checkout-section {
+    padding: 6px 9px;
+    background: #eee;
+    position: relative;
+}
+
+.b-product-card__price {
+    font-size: 16px;
+    color: #7c0604;
+}
+
+.b-product-card__currency {
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+.b-product-card__add-to-cart {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    font-size: 17px;
+    color: #e5e5e5;
+    background-color: #6288ac;
+    line-height: 20px;
+    padding: 0 10px;
+    border: none;
+}
+
+.b-about-content {
+    margin-bottom: 58px;
+}
+
+.b-about-content__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.b-about-content__text {
+    margin-top: 0;
+    line-height: 17px;
+    margin-bottom: 16px;
+}
+
+.b-footer-inner {
+    height: 198px;
+    background-image: url(../img/footer_border.png);
+    background-repeat: repeat-x;
+    background-color: #3482ca;
+    padding-top: 59px;
+    padding-left: 12px;
+}
+
+.b-footer__menu-list {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.b-footer__menu-item {
+    font-size: 13.34px;
+    color: #e5e5e5;
+    line-height: 16px;
+}
+
+.b-footer__menu-link {
+    color: #e5e5e5;
+}
+
+.b-menu-list__contacts {
+    width: 245px;
+    margin-right: 50px;
+}
+
+.b-menu-list__quest {
+    margin-right: 43px;
+    width: 100px;
+}
+
+.b-menu-list__about {
+    margin-right: 51px;
+    width: 155px;
+}
+
+.b-footer__payment-methods {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.b-footer__title {
+    color: #e5e5e5;
+    font-size: 13.34px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.b-footer__link {
+    display: inline-block;
+}
+
+.b-footer__payment-icon{
+    width: 48px;
+    height: 32px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
