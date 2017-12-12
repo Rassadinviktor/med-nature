@@ -656,20 +656,24 @@ body textarea:required:valid {
 
 .b-main {
     display: inline-block;
-    width: 698px;
+    width: 690px;
     vertical-align: top;
-    position: absolute;
 }
 
 .b-slider-container {
     margin-bottom: 56px;
-    margin-left: 19px;
+    margin-left: 16px;
 }
 
 .b-slider-wrapper{
     background-color: #eee;
     width: 100%;
     padding: 3px 0 4px 5px;    
+}
+
+.b-product-card-container {
+    margin-left: -3px;
+    width: 700px;
 }
 
 .js-slider{
