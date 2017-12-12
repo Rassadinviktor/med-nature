@@ -747,6 +747,7 @@ body textarea:required:valid {
     width: 201px;
     border: 1px solid #ebebeb;
     margin: 0 11px 37px 18px;
+    vertical-align: top;
 }
 
 .b-product-card:hover {
