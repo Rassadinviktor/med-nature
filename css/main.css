@@ -489,6 +489,23 @@ body textarea:required:valid {
 }
 .price__num{
     text-decoration: none;
+    position: relative;
+}
+
+.line-through::after{
+    content:"";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #1e7cbc;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+    -moz-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+    -webkit-transform: rotate(28deg);
+    transform: rotate(28deg);
 }
 
 .price-new__num {
