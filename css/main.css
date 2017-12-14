@@ -85,12 +85,17 @@ textarea {
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     font-family: "Arial";
     font-size: 14px;
     font-weight: normal;
     color: #1b1b1b;
-    background-color: #dde6f0
+    background-color: #dde6f0;
+    height: 100%;
 }
 
 ol, ul {
@@ -149,7 +154,7 @@ body textarea:required:valid {
 
 .b-wrapper{
     width: 992px;
-    height: 100%;
+    min-height: 100%;
     padding-top: 52px;
     margin: auto;
 }
@@ -220,15 +225,23 @@ body textarea:required:valid {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 22px 18px 0 25px;
+    padding: 22px 18px 0 0;
     box-sizing: content-box;
 }
 
+.b-cart__separator{
+    display: inline-block;
+    vertical-align: top;
+    width: 1px;
+    height: 111px;
+    background-color: #b9c1ca;
+}
+
 .b-cart__wrapper {
-    // padding-left: 20px;
-    // border-left: 1px solid #b8c0c8;
-    // padding-top: 5px;
     position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 21px;
 }
 
 .b-cart__text{
@@ -294,7 +307,6 @@ body textarea:required:valid {
 }
 
 .b-menu__title-link {
-   
     display: block;
     color: #fff;
     font-weight: bold;
@@ -314,7 +326,6 @@ body textarea:required:valid {
 }
 
 .b-bottom-menu__item {
-    position: relative;
     width: 25%;
     height: 100%;
 }
@@ -348,61 +359,186 @@ body textarea:required:valid {
     text-transform: uppercase;
 }
 
-//----------------Подменю-----------------
-
-.sub-menu{
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.sub-menu {
     background-color: #dde6f0;
-    position: absolute;
-    border-radius: 3px;
-}
-
-.sub-menu__first{
     display: none;
-    top: 40px;
-    left: 44px;
-    width: 198px;
-    padding: 4px 0 43px;
+    position: absolute; 
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.58);
+    overflow: hidden;
+    z-index: 100;
 }
 
-.sub-menu__item{
-    width: 172px;
-    margin: auto;
+.sub-menu__first {
+    left: 183px;
+    top: 313px;
+    width: 200px;
+    height: 214px;
+    padding: 0 13px;
+}
+
+.item-title{
+    display: block;
+    font-size: 18px;
+}
+
+.item-text {
+    font-size: 13px;
+    margin: 0;
+    line-height: 15px;
+}
+
+.item-marker {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.sub-menu__item {
     border-bottom: 1px solid #b9c1c9;
 }
 
-.sub-menu__item:last-child{
-    margin-top: -3px;
+.sub-menu__item:last-child {
     border-bottom: none;
 }
 
-.sub-menu__link{
+.sub-menu__link {
     display: block;
     padding: 17px 0 7px;
     font-size: 18px;
     font-weight: bold;
-    line-height: 19px;
-    color: #006ab3;
     text-align: center;
-    text-decoration: none;
-}
-
-.b-bottom-menu__item:hover .sub-menu{
-    display: table;
 }
 
 .b-bottom-menu__item:nth-child(1):hover .sub-menu__first{
     display: block;
-    z-index: 100;
+}
+
+.b-bottom-menu__item:nth-child(2):hover .sub-menu--second{
+    display: block;
+}
+
+.b-bottom-menu__item:nth-child(3):hover .sub-menu--table{
+    display: table;
+}
+
+.sub-menu--second{
+    left: 274px;
+    top: 314px;
+    padding-bottom: 6px;
+}
+
+.sub-menu--second__line:first-child {
+    padding-top: 13px;
+}
+
+.sub-menu--second__line:nth-child(2) .item-block__title {
+    margin-bottom: 9px;
+}
+
+.sub-menu--second__line .sub-menu--second__item-block:first-child {
+    padding-right: 12px;
+}
+
+.sub-menu--second__item-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 231px;
+}
+
+.sub-menu--second__item-separator {
+    width: 1px;
+    height: 95px;
+    background-color: #bac1ca;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.sub-menu--second__line:nth-child(2) .sub-menu--second__item-separator {
+    margin-top: 27px;
+}
+
+.sub-menu--second__item-link{
+    display: block;
+    padding-top: 7px;
+}
+
+.item-block__title {
+    margin-bottom: 17px;
+}
+
+.item-block__text {
+    margin-bottom: 25px;
+    padding-left: 14px;
+    text-align: left;
+}
+
+.item-block__marker{
+    display: block;
+    border-bottom: 1px solid #bac1ca;
+    width: 178px;
+    margin: 0 auto;
+}
+
+.sub-menu--second__line:nth-child(2) .item-block__marker {
+    border-bottom: none;
+}
+
+.sub-menu--table {
+    right: 139px;
+    top: 313px;
+    border-collapse: collapse;
+    border: none;
+}
+
+.sub-menu--table__cell-item {
+    vertical-align: top;
+    border: 1px solid #c4cbd2;
+    width: 237px;
+    padding: 0 10px;
+}
+
+.cell-item__link {
+    display: block;
+    height: 100%;
+}
+
+.cell-item__wrapper {
+    min-height: 155px;
+    margin-bottom: -26px;
+    padding-top: 11px;
+    padding-bottom: 35px;
+}
+
+.cell-item__title {
+    font-size: 16px;
+    letter-spacing: 4.5px;
+    margin-bottom: 16px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.sub-menu--table__line:last-child .cell-item__wrapper{
+    min-height: 166px;
+}
+
+.sub-menu--table__cell-item:last-child {
+    width: 262px;
 }
 
 .b-main-content {
+    min-height: 100%;
+    position: relative;
     padding-top: 15px;
-    padding-bottom: 11px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 11px;
 }
 
 .b-inner-content{
@@ -707,11 +843,41 @@ body textarea:required:valid {
 }
 
 .b-features__item {
+    position: relative;
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 12px;
     padding-left: 15px;
     width: 33.3333%;
+}
+
+.b-features__item:hover .b-dropdown-menu {
+    display: block;
+}
+
+.b-dropdown-menu{
+    position: absolute;
+    display: none;
+    width: 308px;
+    top: 50px;
+    right: -56px;
+    padding: 7px 0 11px 2px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.38);
+    box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.38);
+    border: 1px solid #b9c1ca;
+    border-radius: 5px;
+}
+
+.triangle{
+
+}
+
+.b-dropdown-menu__text {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
 }
 
 .b-features__icon{
@@ -880,9 +1046,6 @@ body textarea:required:valid {
     width: 46px;
     height: 30px;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes

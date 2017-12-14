@@ -36,6 +36,7 @@
                             <span class="b-contacts__info">Ежедневно с 9 - 00 до 19 - 00</span>
                         </div>
                         <a href="javascript:void(0)" class="b-cart" title="Перейти в корзину">
+                            <div class="b-cart__separator"></div>
                             <div class="b-cart__wrapper">
                                 <span class="b-cart__text b-cart__text--middle text-mark">Корзина</span>
                                 <span class="b-cart__text">Товаров:<span class="js-count">0</span></span>
@@ -74,33 +75,136 @@
                 </nav>
                 <!-- End: b-header-menu -->
                 <!-- Begin: b-bottom-menu -->
+                
                 <nav class="b-bottom-menu b-menu">
                     <ul class="b-bottom-menu__list">
                         <li class="b-bottom-menu__item b-menu__item">
                             <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="Очищение"><span class="b-bottom-menu__big-text">Очищение</span></a>
-                            <ul class="sub-menu sub-menu__first">
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Молочко</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Тоники</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a href="#" class="sub-menu__link">Отшелушивание и Демакияж</a>
-                                </li>
-                            </ul>
+                            <div class="dropdown">
+                                <ul class="sub-menu__first sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link text-mark">Молочко</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link text-mark">Тоники</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link text-mark">Отшелушивание<br />и<br />Демакияж</a>
+                                    </li>
+                                </ul> 
+                            </div>
+                               
                         </li>
                         <li class="b-bottom-menu__item b-menu__item">
                             <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="для лица - premium">
                                 <span class="b-bottom-menu__middle-text">для лица</span>
                                 <span class="b-bottom-menu__series-title">classic</span>
                             </a>
+                            <div class="dropdown">
+                                <div class="sub-menu--second sub-menu">
+                                    <div class="sub-menu--second__line">
+                                        <div class="sub-menu--second__item-block">
+                                            <a href="" class="sub-menu--second__item-link" title="Most Hydrating">
+                                                <span class="item-title item-block__title text-mark text-bold">Most Hydrating</span>
+                                                <p class="item-text item-block__text">Увлажняет и защищает от обезвоживания</p>
+                                                <span class="item-marker item-block__marker text-mark">для жирной кожи, для кожи смешанного типа</span>
+                                            </a>
+                                        </div>
+                                        <div class="sub-menu--second__item-separator"></div>
+                                        <div class="sub-menu--second__item-block">
+                                            <a href="" class="sub-menu--second__item-link" title="">
+                                                <span class="item-title item-block__title text-mark text-bold">Perfect Age</span>
+                                                <p class="item-text item-block__text">Питает кожу и восстанавливает ее функции</p>
+                                                <span class="item-marker item-block__marker text-mark">для сухой кожи, для кожи смешанного типа</span>
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="sub-menu--second__line">
+                                        <div class="sub-menu--second__item-block">
+                                            <a href="" class="sub-menu--second__item-link" title="">
+                                                <span class="item-title item-block__title text-mark text-bold">Purifying</span>
+                                                <p class="item-text item-block__text">Бореться с излишней выработкой кожного сала и контролирует деятельность бактерий</p>
+                                                <span class="item-marker item-block__marker text-mark">для жирной кожи, для кожи смешанного типа</span>
+                                            </a>
+                                        </div>
+                                        <div class="sub-menu--second__item-separator"></div>
+                                        <div class="sub-menu--second__item-block">
+                                            <a href="" class="sub-menu--second__item-link" title="">
+                                                <span class="item-title item-block__title text-mark text-bold">Sweet Relief</span>
+                                                <p class="item-text item-block__text">Уменьшение хрупкости капиляров, облегчает состояние кожи и дарит мгновенное ощущения комфорта</p>
+                                                <span class="item-marker item-block__marker text-mark">для чувствительой кожи</span>
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                    
+                                </div> 
+                            </div>
                         </li>
                         <li class="b-bottom-menu__item b-menu__item">
                             <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="для лица - classic">
                                 <span class="b-bottom-menu__middle-text">для лица</span>
                                 <span class="b-bottom-menu__series-title">premium</span>
                             </a>
+                            <table class="sub-menu--table sub-menu">
+                                <tr class="sub-menu--table__line">
+                                    <td class="sub-menu--table__cell-item">
+                                        <a href="#" class="cell-item__link" title="desense">
+                                            <div class="cell-item__wrapper">
+                                                <span class="cell-item__title item-title text-mark text-bold">desense</span>
+                                                <p class="item-text">Борется с основными видами воспалений, усиливает защитную функцию кожи, улучшает циркуляцию</p>
+                                            </div>
+                                            <span class="item-marker text-mark">для чувствительной и раздражительной кожи</span>
+                                        </a>                                             
+                                    </td>
+                                    <td class="sub-menu--table__cell-item">
+                                        <a href="#" class="cell-item__link" title="pramaluce">
+                                            <div class="cell-item__wrapper">
+                                                <span class="cell-item__title item-title text-mark text-bold">pramaluce</span>
+                                                <p class="item-text">Инновационная программа последовательного обновления с PHA  и АНА кислотами</p>
+                                            </div>
+                                            <span class="item-marker text-mark">для всех типов кожи</span>
+                                        </a>                                             
+                                    </td>
+                                    <td class="sub-menu--table__cell-item">
+                                        <a href="#" class="cell-item__link" title="detailse of beuty">
+                                            <div class="cell-item__wrapper">
+                                                <span class="cell-item__title item-title text-mark text-bold">detailse of beuty</span>
+                                                <p class="item-text">Растительные стволовые клетки, икра и ретинол для эфективного воздействия против старения</p>
+                                            </div>
+                                            <span class="item-marker text-mark">для всех типов кожи</span>
+                                        </a>                                             
+                                    </td>                                                                                                    
+                                </tr>
+                                <tr class="sub-menu--table__line">
+                                    <td class="sub-menu--table__cell-item">
+                                        <a href="#" class="cell-item__link" title="reveillance">
+                                            <div class="cell-item__wrapper">
+                                                <span class="cell-item__title item-title text-mark text-bold">reveillance</span>
+                                                <p class="item-text">Глобальная анетиоксидантная защита против свободных радикалов технология многоуровневого проникновения, содержит нано частицы</p>
+                                            </div>
+                                            <span class="item-marker text-mark">для всех типов кожи</span>
+                                        </a>                                             
+                                    </td>
+                                    <td class="sub-menu--table__cell-item">
+                                        <a href="#" class="cell-item__link" title="liftinc code">
+                                            <div class="cell-item__wrapper">
+                                                <span class="cell-item__title item-title text-mark text-bold">liftinc code</span>
+                                                <p class="item-text">Мультинаправленное лифтинг-воздействие, заполнение морщин, подтягивание, увлажнение</p>
+                                            </div>
+                                            <span class="item-marker text-mark">для всех типов кожи особенно для сухой кожи</span>
+                                        </a>                                             
+                                    </td>
+                                    <td class="sub-menu--table__cell-item">
+                                        <a href="#" class="cell-item__link" title="age beuty secret">
+                                            <div class="cell-item__wrapper">
+                                                <span class="cell-item__title item-title text-mark text-bold">age beuty secret</span>
+                                                <p class="item-text">Делает цвет лица ровным, разглаживает морщинны, защищает от повреждений, вызванных временем и вредными привычками</p>
+                                            </div>
+                                            <span class="item-marker text-mark">для всех типов кожи</span>
+                                        </a>                                             
+                                    </td>                                                                                                    
+                                </tr>                                                                                                   
+                            </table>
                         </li>
                         <li class="b-bottom-menu__item b-menu__item">
                             <a href="" class="b-bottom-menu__title-link b-menu__title-link" title="для тела"><span class="b-bottom-menu__big-text">Для тела</span></a>
@@ -245,18 +349,30 @@
                                                 <img src="img/thumb-up_icon.png" alt="Надёжность работы" title="Надёжность работы" class="b-features__image">
                                                 <figcaption class="b-features__text">Надёжность работы</figcaption>
                                             </figure>
+                                            <div class="b-dropdown-menu">
+                                                <div class="triangle"></div>
+                                                <p class="b-dropdown-menu__text">Наша команда всегда следит за событиями на рынке новинок, и предлагаем своим клиентам приобрести только ту продукцию, которая считается уникальной в своем роде.Вы сможете улучшить здоровье своей семьи и близких. С интернет магазином “Med - Nature” быть здоровым очень легко!</p>
+                                            </div>
                                         </li>
                                         <li class="b-features__item">
                                             <figure class="b-features__icon">
                                                 <img src="img/warranty_icon.png" alt="Гарантия Подлинности" title="Гарантия Подлинности" class="b-features__image">
                                                 <figcaption class="b-features__text">Гарантия Подлинности</figcaption>
                                             </figure>
+                                            <div class="b-dropdown-menu">
+                                                <div class="triangle"></div>
+                                                <p class="b-dropdown-menu__text">Наша команда всегда следит за событиями на рынке новинок, и предлагаем своим клиентам приобрести только ту продукцию, которая считается уникальной в своем роде.Вы сможете улучшить здоровье своей семьи и близких. С интернет магазином “Med - Nature” быть здоровым очень легко!</p>
+                                            </div>
                                         </li>
                                         <li class="b-features__item">
                                             <figure class="b-features__icon">
                                                 <img src="img/cash-back_icon.png" alt="Возможность возврата" title="Возможность возврата" class="b-features__image">
                                                 <figcaption class="b-features__text">Возможность возврата</figcaption>
                                             </figure>
+                                            <div class="b-dropdown-menu">
+                                                <div class="triangle"></div>
+                                                <p class="b-dropdown-menu__text">Наша команда всегда следит за событиями на рынке новинок, и предлагаем своим клиентам приобрести только ту продукцию, которая считается уникальной в своем роде.Вы сможете улучшить здоровье своей семьи и близких. С интернет магазином “Med - Nature” быть здоровым очень легко!</p>
+                                            </div>
                                         </li>                                    
                                     </ul>
                                 </div>
