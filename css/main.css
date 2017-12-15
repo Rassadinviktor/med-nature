@@ -269,9 +269,7 @@ body textarea:required:valid {
 
 .b-menu{
     background-image: url(../img/menu_bg.png);
-    border-radius: 3px;
-    overflow: hidden;
-}
+    border-radius: 3px;}
 
 .b-menu__item{
     display: inline-block;
@@ -326,6 +324,7 @@ body textarea:required:valid {
 }
 
 .b-bottom-menu__item {
+    position: relative;
     width: 25%;
     height: 100%;
 }
@@ -372,9 +371,9 @@ body textarea:required:valid {
     z-index: 100;
 }
 
-.sub-menu__first {
-    left: 183px;
-    top: 313px;
+.sub-menu--first {
+    left: 43px;
+    top: 59px;
     width: 200px;
     height: 214px;
     padding: 0 13px;
@@ -398,15 +397,15 @@ body textarea:required:valid {
     margin-bottom: 2px;
 }
 
-.sub-menu__item {
+.sub-menu--first__item {
     border-bottom: 1px solid #b9c1c9;
 }
 
-.sub-menu__item:last-child {
+.sub-menu--first__item:last-child {
     border-bottom: none;
 }
 
-.sub-menu__link {
+.sub-menu--first__link {
     display: block;
     padding: 17px 0 7px;
     font-size: 18px;
@@ -414,7 +413,7 @@ body textarea:required:valid {
     text-align: center;
 }
 
-.b-bottom-menu__item:nth-child(1):hover .sub-menu__first{
+.b-bottom-menu__item:nth-child(1):hover .sub-menu--first{
     display: block;
 }
 
@@ -427,8 +426,9 @@ body textarea:required:valid {
 }
 
 .sub-menu--second{
-    left: 274px;
-    top: 314px;
+    width: 463px;
+    left: -110px;
+    top: 59px;
     padding-bottom: 6px;
 }
 
@@ -489,8 +489,9 @@ body textarea:required:valid {
 }
 
 .sub-menu--table {
-    right: 139px;
-    top: 313px;
+    width: 735px;
+    left: -249px;
+    top: 57px;
     border-collapse: collapse;
     border: none;
 }
